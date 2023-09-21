@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi morena</title>
+    <style>
+        .body {
+            background-color: crimson;
+            text-align: center;
+        }
+
+        .body__title {
+            color: white;
+        }
+        
+        .body__img {
+            width: 50%;
+            border-radius: 30%;
+        }
+        
+    </style>
+</head>
+<body class="body">
+    <h1 class="body__title">¿Te gustaría estar a mi lado nuevamente? 🥺</h1>
+    <img src="https://i.ibb.co/NSFPYnL/9a9a2097-0acb-4214-bb8a-0572b68621ae.jpg" alt="Te elijo a ti" class="body__img">
+    <button id="yes">Acepto💍</button>
+    <button id="no">No me gustaria</button>
+
+    <script>
+        const vutonSi = document.getElementById('yes')
+        const vutonNo = document.getElementById('no')
+
+        const MiAmor = () => {
+             alert('💞Nunca te soltaré💞');
+            
+             location.href = 'https://www.youtube.com/watch?v=5alf3HvHecE&ab_channel=Jos%C3%A9Forner';
+        }
+
+        const evitar = () => {
+            vutonNo.style.position = 'absolute';
+            vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+            vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+        }
+
+        vutonSi.addEventListener('click', MiAmor);
+        vutonNo.addEventListener('mouseover', evitar);
+    </script>
+</body>
+</html> 
